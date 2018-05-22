@@ -1,0 +1,14 @@
+<div class="container">
+<p>Minhas Histórias</p>
+<div class="row">
+  <div class="col-sm-4" *ngFor="let historia of historias">
+    <div class="card">
+      <img class="card-img-top" [src]="historia.capa[0].url">
+      <div class="card-block">
+        <h4 class="card-title">{{historia.titulo}}</h4>
+        <a [routerLink] = "" class="btn btn-outline-primary">Editar historia</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

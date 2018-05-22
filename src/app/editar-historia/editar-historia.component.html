@@ -1,0 +1,44 @@
+<div class="container">
+  <form>
+      <div class="form-group">
+        <label for="validationTooltip01">Nome da história</label>
+          <input type="text" class="form-control" id="validationTooltip01" placeholder="Nome da história" required>
+      </div>
+      <div class="form-group">
+        <label for="validationTooltip01">Categorias</label>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+          <label class="form-check-label" for="inlineCheckbox1">Aventura</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+          <label class="form-check-label" for="inlineCheckbox2">Drama</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+          <label class="form-check-label" for="inlineCheckbox3">Terror</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="validationTooltip01">Capa da história</label>
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="customFile">
+          <label class="custom-file-label" for="customFile">Escolher Capa</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="validationTooltip01">Classificação indicativa</label>
+        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+          <option selected>Escolha...</option>
+          <option value="1">Livre</option>
+          <option value="2">16 anos</option>
+          <option value="3">18 anos</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="validationTooltip01">Sinopse</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Descreva a história"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Salvar alterações</button>
+    </form>
+</div>

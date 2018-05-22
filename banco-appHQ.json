@@ -1,0 +1,229 @@
+{
+	"usuario":[
+		{
+			"id": 1,
+			"nome_completo": "Luisa Dentello e Silva",
+			"data_nasc": "1993-07-21",
+			"cpf":34483692844,
+			"pseudonimo": "Liswyn",
+			"email": "luisa@email.com",
+			"senha": "123",
+			"img": [
+				{"url": "/assets/avatares/1/avatar.jpg"}
+			]
+		},
+		{
+			"id": 2,
+			"nome_completo": "Vanessa Elaine Pavan",
+			"data_nasc": "1996-01-21",
+			"cpf":97430025889,
+			"pseudonimo": "VaniAGP",
+			"email": "vanessa@email.com",
+			"senha": "123",
+			"img": [
+				{"url": "/assets/avatares/2/avatar.jpg"}
+			]
+		},
+		{
+			"id": 3,
+			"nome_completo": "Wellington Roberto Mendes Furtado",
+			"data_nasc": "1991-12-27",
+			"cpf":52119275831,
+			"pseudonimo": "WellRMF",
+			"email": "vanessaepavan707@gmail.com",
+			"senha": "123",
+			"img": [
+				{"url": "/assets/avatares/2/avatar.jpg"}
+			]
+		}
+	],
+	"categoria":[
+		{
+			"id": 1,
+			"categoria": "+18"
+		},
+		{
+			"id": 2,
+			"categoria": "Ação"
+		},
+		{
+			"id": 3,
+			"categoria": "Aventura"
+		},
+		{
+			"id": 4,
+			"categoria": "Comédia"
+		},
+		{
+			"id": 5,
+			"categoria": "Drama"
+		},
+		{
+			"id": 6,
+			"categoria": "Esportes"
+		},
+		{
+			"id": 7,
+			"categoria": "Fantasia"
+		},
+		{
+			"id": 8,
+			"categoria": "Ficção Científica"
+		},
+		{
+			"id": 9,
+			"categoria": "Infantil"
+		},
+		{
+			"id": 10,
+			"categoria": "Policial"
+		},
+		{
+			"id": 11,
+			"categoria": "Romance"
+		},
+		{
+			"id": 12,
+			"categoria": "Shonen"
+		},
+		{
+			"id": 13,
+			"categoria": "Shoujo"
+		},
+		{
+			"id": 14,
+			"categoria": "Survival"
+		},
+		{
+			"id": 15,
+			"categoria": "Suspense"
+		},
+		{
+			"id": 16,
+			"categoria": "Terror"
+		}
+	],
+	
+	"historia":[
+		{
+			"id": 1,
+			"titulo": "A Lenda de Algarioth",
+			"class_ind": "L",
+			"sinopse": "Um conflito político pode estar colocando em risco a existência de um reino.",
+			"autor": "Liswyn",
+			"categoria": 1,
+			"destaque": true,
+			"capa": [
+				{"url": "/assets/historias/capas/capa1.jpg"}
+			]
+		},
+		{
+			"id": 2,
+			"titulo": "O senhor dos aneis",
+			"class_ind": "16",
+			"sinopse": "Um hobbit recebe de presente de seu tio um anel mágico e maligno que precisa ser destruído antes que caia nas mãos do mal, pois o futuro da civilização depende do destino desse anel. Para isso, o hobbit Frodo terá um caminho árduo pela frente. Ao seu lado, para o cumprimento desta jornada, ele poderá contar com outros hobbits.",
+			"autor": "Liswyn",
+			"categoria": 1,
+			"destaque": false,
+			"capa": [
+				{"url": "/assets/historias/capas/capa2.jpg"}
+			]
+		},
+		{
+			"id": 3,
+			"titulo": "Hobbit",
+			"class_ind": "L",
+			"sinopse": "Como a maioria dos hobbits, Bilbo Bolseiro leva uma vida tranquila até o dia em que recebe uma missão do mago Gandalf. Acompanhado por um grupo de anões, ele parte numa jornada até a Montanha Solitária para libertar o Reino de Erebor do dragão Smaug.",
+			"autor": "Liswyn",
+			"categoria": 3,
+			"destaque": true,
+			"capa": [
+				{"url": "/assets/historias/capas/capa3.jpg"}
+			]
+		},
+		{
+			"id": 4,
+			"titulo": "Caverna do Dragão",
+			"class_ind": "13",
+			"sinopse": "Seis crianças embarcam numa montanha russa e acabam parando no Reino de Dungeons and Dragons, a Caverna do Dragão. Para receber aos perigos daquela terra mágica, elas recebem seis Armas do Poder: Hank, um arco de flechas magnéticas; Eric, um poderoso escudo; Diana, um bastão para acrobacias; Sheila, um capuz de invisibilidade; Presto, um chapéu de feiticeiro; e Bobby, um tacape superpoderoso. Com a ajuda do Mestre dos Magos, eles tentarão encontrar um caminho de volta para casa; mas não poderão contar com ele para combater o maligno Vingador e o dragão de cinco cabeças Tiamat.",
+			"autor": "Liswyn",
+			"categoria": 3,
+			"destaque": true,
+			"capa": [
+				{"url": "/assets/historias/capas/capa4.jpg"}
+			]
+		},
+		{
+			"id": 5,
+			"titulo": "A Lenda de Ruff Ghanor",
+			"class_ind": "16",
+			"sinopse": "Nos confins de uma terra inclemente, assolada por monstros e governada pelo terrível dragão Zamir, ergue-se o mosteiro de São Arnaldo. Os clérigos tentam viver em paz, sob o jugo do tirano, quando encontram um estranho garoto. Uma criança selvagem, dotada de poderes misteriosos, que luta como um adulto. Seu nome é como um rugido: Ruff Ghanor.",
+			"autor": "Liswyn",
+			"categoria": 2,
+			"destaque": true,
+			"capa": [
+				{"url": "/assets/historias/capas/capa5.jpg"}
+			]
+		},
+		{
+			"id": 6,
+			"titulo": "OZOB",
+			"class_ind": "18",
+			"sinopse": "O século 22 é uma época escura, feita de cibernética, inteligências artificiais, megacorporações que controlam os governos, redes sociais onipresentes, gangues e violência. No centro de tudo, uma metrópole se ergue em plataformas sucessivas, com prédios que se elevam acima das nuvens. Construída sobre o que já foi Nova York, Delta City abriga as maiores corporações e milhões de habitantes. Mas, nas ruas sob as plataformas, a Cidade Baixa é o lar de criminosos, miseráveis e escória. O lar de Ozob. Ozob, um construto genético encomendado por uma corporação, feito à imagem da mente insana de seu criador. Perseguido por seus irmãos sanguinários, só tem mais dois anos de vida. Para ele, nenhum minuto pode ser desperdiçado.",
+			"autor": "Liswyn",
+			"categoria": 1,
+			"destaque": false,
+			"capa": [
+				{"url": "/assets/historias/capas/capa6.jpg"}
+			]
+		}
+	],
+	
+	"historia_categoria": [
+		{
+			"id_historia": 1,
+			"id_categoria": 3
+		},
+		{
+			"id_historia": 1,
+			"id_categoria": 7
+		}
+	],
+	
+	"capitulo": [
+		{
+			"id": 1,
+			"id_historia": 2,
+			"titulo": "A sociedade do Anel",
+			"paginas": [
+				{"url": "/assets/historias/capitulos/h2-c1-p1.jpg"},
+				{"url": "/assets/historias/capitulos/h2-c1-p2.jpg"},
+				{"url": "/assets/historias/capitulos/h2-c1-p3.jpg"},
+				{"url": "/assets/historias/capitulos/h2-c1-p4.jpg"},
+				{"url": "/assets/historias/capitulos/h2-c1-p5.jpg"}			
+			]
+		},
+		{
+			"id": 22,
+			"id_historia": 2,
+			"titulo": "As duas torres",
+			"paginas": [
+				{"url": "/assets/historias/capitulos/h2-c2-p1.jpg"},
+				{"url": "/assets/historias/capitulos/h2-c2-p2.jpg"},
+				{"url": "/assets/historias/capitulos/h2-c2-p3.jpg"},
+				{"url": "/assets/historias/capitulos/h2-c2-p4.jpg"}		
+			]
+		},
+		{
+			"id": 35,
+			"id_historia": 2,
+			"titulo": "O retorno do Rei",
+			"paginas": [
+				{"url": "/assets/historias/capitulos/h2-c3-p1.jpg"},
+				{"url": "/assets/historias/capitulos/h2-c3-p2.jpg"},
+				{"url": "/assets/historias/capitulos/h2-c3-p3.jpg"}			
+			]
+		}
+	]
+		
+}

@@ -1,0 +1,36 @@
+<div class="topo">
+  <nav class="navbar navbar-light bg-faded">
+    <div class="container">
+      <a routerLink="" class="navbar-brand">
+        <img src="/assets/logo.png" />
+      </a>
+      <a routerLinkActive="active" routerLink="/cadastro" >Cadastro</a>
+      <a routerLinkActive="active" routerLink="/login">Login</a>
+      <a routerLinkActive="active" routerLink="/configConta">Minha Conta</a>
+      <a routerLinkActive="active" routerLink="/publicarHistoria">Publicar História</a>
+      <a routerLinkActive="active" routerLink="/publicarCapitulo">Publicar Capítulo</a>
+      <a routerLinkActive="active" routerLink="/minhasHistorias">Minhas Publicações</a>
+      <a routerLinkActive="active" routerLink="/editarHistoria">Editar Historia</a>
+      <a routerLinkActive="active" routerLink="/lerHistoria">Ler Historia</a>
+      <nav class="navbar navbar-light bg-faded justify-content-between">
+        <form class="form-inline" routerLink='/historias'>
+          <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+      </nav>
+    </div>
+  </nav>
+
+  <div class="menu" #menu>
+    <div class="container">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="/quemSomos">Quem Somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="/contato">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
