@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, ViewChildren } from '@angular/core';
 import { CategoriasService } from '../categorias.service';
 import { Categoria } from '../shared/categoria.model';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs/Subscription';
+import { QueryList } from '@angular/core';
 
 @Component({
   selector: 'app-left-menu',
@@ -16,6 +17,9 @@ export class LeftMenuComponent implements OnInit {
   public idCategoria: number;
   public categoriaId: Subscription;
 
+  @ViewChildren('lista') 
+  listaItens: QueryList<ElementRef>;
+  
   constructor(private rota: ActivatedRoute, private router: Router,private categoriasService: CategoriasService) { }
 
   ngOnInit() {
@@ -42,6 +46,23 @@ export class LeftMenuComponent implements OnInit {
       }
     )
 
+    this.categoriaId = CategoriasService.alteraLeftMenu.subscribe(
+      data=> {
+
+        console.log(data);
+        console.log('id da categoria que foi fechada  ^')
+        console.log(this.listaItens)
+ 
+
+        this.listaItens._results.forEach(function(item) {
+          if(item.nativeElement.id == data.id){
+            console.log(item);
+            item.nativeElement.className = "list-group-item list-group-item-action";
+            console.log(item);
+          }
+        });
+      }
+    )
   }
 
 

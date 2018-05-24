@@ -3,6 +3,7 @@ import { Historia } from '../shared/historia.model';
 import { HistoriasService } from '../historias.service';
 import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs/Subscription';
+import { CategoriasService } from '../categorias.service';
 
 @Component({
   selector: 'app-historia-id-categoria',
@@ -16,7 +17,7 @@ export class HistoriaIdCategoriaComponent implements OnInit {
   public idCategoria: number;
   public inscricaoId: Subscription;
 
-  constructor(private rota: ActivatedRoute, private historiasService: HistoriasService) {
+  constructor(private rota: ActivatedRoute, private historiasService: HistoriasService, private categoriasService: CategoriasService) {
      
    }
 
@@ -27,7 +28,7 @@ export class HistoriaIdCategoriaComponent implements OnInit {
       (params: any)=> {
         this.idCategoria = params['id'];
         console.log(this.idCategoria);
-
+       
         //pegando apenas as historias com o Id da categoria
         console.log('está vindo a primeira vez buscar as historias pelo id')
         this.historiasService.getHistoriasPorIdCategorias(this.idCategoria)
@@ -41,6 +42,7 @@ export class HistoriaIdCategoriaComponent implements OnInit {
 
   ngOnDestroy(){
     this.inscricaoId.unsubscribe();
+    CategoriasService.alteraLeftMenu.emit({id: this.idCategoria});
   }
 
 }

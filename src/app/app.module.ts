@@ -23,6 +23,7 @@ import { HistoriasComponent } from './historias/historias.component';
 import { HistoriaIdCategoriaComponent } from './historia-id-categoria/historia-id-categoria.component';
 import { AbrirCapituloComponent } from './abrir-capitulo/abrir-capitulo.component';
 
+import {CategoriasService} from './categorias.service';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,7 @@ import { AbrirCapituloComponent } from './abrir-capitulo/abrir-capitulo.componen
     HttpModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [],
+  providers: [CategoriasService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
