@@ -9,7 +9,7 @@ export class CapitulosService{
 
     constructor(private http: Http){}
 
-   
+
    
     public getCapitulos(): Promise<Capitulo[]>{
         return this.http.get(`http://localhost:3000/capitulo`)
