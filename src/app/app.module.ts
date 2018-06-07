@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
+import { FormsModule }   from '@angular/forms';
+
 
 import { ROUTES } from './app.routes';
 
@@ -24,6 +26,9 @@ import { HistoriaIdCategoriaComponent } from './historia-id-categoria/historia-i
 import { AbrirCapituloComponent } from './abrir-capitulo/abrir-capitulo.component';
 
 import {CategoriasService} from './categorias.service';
+import { AutenticacaoService } from './login/autenticacao.service';
+import { HistoriasService } from './historias.service';
+import { UsuarioService } from './usuario.service';
 
 @NgModule({
   declarations: [
@@ -43,14 +48,18 @@ import {CategoriasService} from './categorias.service';
     MinhasHistoriasComponent,
     HistoriasComponent,
     HistoriaIdCategoriaComponent,
-    AbrirCapituloComponent
+    AbrirCapituloComponent,  
   ],
   imports: [
     BrowserModule,
     HttpModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    FormsModule
   ],
-  providers: [CategoriasService],
+  providers: [CategoriasService, 
+              AutenticacaoService, 
+              HistoriasService, 
+              UsuarioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
