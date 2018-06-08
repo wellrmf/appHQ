@@ -10,9 +10,10 @@ export class UsuarioService {
   constructor(private http: Http){}
 
   public getUsuarioPorEmail(email: string): Promise<Usuario[]>{
+
     return this.http.get(`http://localhost:3000/usuario?email=${email}`)
-        .toPromise()
-        .then((resposta: any)=> resposta.json())
-} 
+    .toPromise()
+    .then((resposta: any)=> resposta.json())
+  } 
 
 }

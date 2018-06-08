@@ -14,10 +14,12 @@ export class AutenticacaoService {
   fazerLogin(usuarioInformado: Usuario){
     this.usuarioService.getUsuarioPorEmail(usuarioInformado.email)
     .then((usuario: Usuario[]) =>{
+      
       this.usuario = usuario[0]
-      console.log(this.usuario)
     })
-
+  
+    console.log(this.usuario.email)
+    console.log(usuarioInformado.email)
     if(usuarioInformado.email === this.usuario.email && 
       usuarioInformado.senha === this.usuario.senha){
       this.usuarioAutenticado = true;
