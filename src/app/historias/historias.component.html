@@ -10,7 +10,7 @@
           <h4 class="card-title">{{ historia.titulo }}</h4>
           <p class="card-text">{{ historia.sinopse }}</p>
           <p class="autor">{{ historia.autor }}</p>
-          <a routerLink="/lerHistoria" class="btn btn-outline-primary">Abrir história</a>
+          <a [routerLink]="['/lerHistoria', historia.id]" class="btn btn-outline-primary">Abrir história</a>
         </div>
       </div>
     </div>

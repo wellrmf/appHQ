@@ -4,6 +4,7 @@ import { Categoria } from '../shared/categoria.model';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs/Subscription';
 import { QueryList } from '@angular/core';
+import { isUndefined } from 'util';
 
 @Component({
   selector: 'app-left-menu',
@@ -54,6 +55,7 @@ export class LeftMenuComponent implements OnInit {
         console.log(this.listaItens)
  
 
+        // testar com esta funcao isUndefined
         this.listaItens["_result"].forEach(function(item) {
           if(item.nativeElement.id == data.id){
             console.log(item);

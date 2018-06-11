@@ -112,7 +112,7 @@
 			"sinopse": "Um conflito político pode estar colocando em risco a existência de um reino.",
 			"autor": "Liswyn",
 			"categoria": 1,
-			"destaque": true,
+			"destaque": false,
 			"capa": [
 				{"url": "/assets/historias/capas/capa1.jpg"}
 			]

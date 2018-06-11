@@ -9,22 +9,22 @@ export class AutenticacaoService {
   private usuario: Usuario;
   private usuarioAutenticado: boolean = false;
 
-  constructor(private usuarioService: UsuarioService, private router: Router) { }
+  constructor(private usuarioService: UsuarioService, private router: Router) { 
+    this.usuario = new Usuario();
+  }
 
   fazerLogin(usuarioInformado: Usuario){
     this.usuarioService.getUsuarioPorEmail(usuarioInformado.email)
     .then((usuario: Usuario[]) =>{
       
       this.usuario = usuario[0]
-    })
-  
-    console.log(this.usuario.email)
-    console.log(usuarioInformado.email)
-    if(usuarioInformado.email === this.usuario.email && 
-      usuarioInformado.senha === this.usuario.senha){
-      this.usuarioAutenticado = true;
-      this.router.navigate(['/']);
-    }
+
+      if(usuarioInformado.email === this.usuario.email && 
+        usuarioInformado.senha === this.usuario.senha){
+        this.usuarioAutenticado = true;
+        this.router.navigate(['/']);
+      }
+    })   
     
   }
 
